@@ -4,6 +4,7 @@ public class ControlEspanol : MonoBehaviour
 {
     [Header("Movimiento")]
     public CharacterController controller;
+    public Animator animator;
     public float velocidadCaminar = 4f;
     public float velocidadCorrer = 7f;
     public float gravedad = -9.81f;
@@ -14,6 +15,12 @@ public class ControlEspanol : MonoBehaviour
     public Transform camaraTransform;
     public float sensibilidadMouse = 200f;
     private float rotacionX = 0f; // Guarda la rotación arriba/abajo
+
+
+    [Header("Efecto Sprint Cámara")]
+    private Vector3 posicionInicialCamara;
+    public float desplazamientoSprint = 0.25f;
+    public float suavizadoCamara = 8f;
 
     [Header("Sistema de Estamina")]
     public float estaminaMaxima = 100f;
@@ -33,6 +40,11 @@ public class ControlEspanol : MonoBehaviour
         {
             controller = GetComponent<CharacterController>();
         }
+
+        if (animator == null)
+        {
+            animator = GetComponent<Animator>();
+        }
         
         // Inicializar la estamina al máximo
         estaminaActual = estaminaMaxima;
@@ -40,6 +52,11 @@ public class ControlEspanol : MonoBehaviour
         // Bloquear el puntero del mouse en el centro de la pantalla y ocultarlo para que no estorbe al girar
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        if (camaraTransform != null)
+        {
+            posicionInicialCamara = camaraTransform.localPosition;
+        }
     }
 
     void Update()
@@ -70,6 +87,23 @@ public class ControlEspanol : MonoBehaviour
         }
     }
 
+    void ManejarCamaraSprint(bool corriendo)
+    {
+        if (camaraTransform == null) return;
+
+        Vector3 posicionObjetivo = posicionInicialCamara;
+
+        if (corriendo)
+        {
+            posicionObjetivo += new Vector3(0f, 0f, desplazamientoSprint);
+        }
+
+        camaraTransform.localPosition = Vector3.Lerp(
+            camaraTransform.localPosition,
+            posicionObjetivo,
+            suavizadoCamara * Time.deltaTime
+        );
+    }
     void ManejarMovimientoYEstamina()
     {
         float x = Input.GetAxis("Horizontal");
@@ -77,10 +111,14 @@ public class ControlEspanol : MonoBehaviour
         Vector3 mover = transform.right * x + transform.forward * z;
 
         // Verificar si el jugador se está moviendo intencionalmente (magnitud mayor a cero)
-        bool seEstaMoviendo = mover.magnitude > 0.1f;
+        bool seEstaMoviendo = mover.magnitude > 0.1f;      
         
         // Condición para correr: Presiona Shift, se está moviendo y no está exhausto
         bool intentaCorrer = Input.GetKey(KeyCode.LeftShift) && seEstaMoviendo && puedeCorrer;
+
+        animator.SetBool("caminando", seEstaMoviendo);
+        animator.SetBool("corriendo", intentaCorrer);
+        ManejarCamaraSprint(intentaCorrer);
 
         if (intentaCorrer)
         {
