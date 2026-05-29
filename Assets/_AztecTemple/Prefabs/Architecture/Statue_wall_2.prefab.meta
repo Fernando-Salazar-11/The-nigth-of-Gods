@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b1c16bce48b924344a8a7ca163fdbd1e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213891
+  packageName: Aztec temple
+  packageVersion: 1.0
+  assetPath: Assets/_AztecTemple/Prefabs/Architecture/Statue_wall_2.prefab
+  uploadId: 481616

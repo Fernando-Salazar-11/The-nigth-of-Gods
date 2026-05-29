@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f3786ad1c7baf69409fcb6574d7c2af9
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213891
+  packageName: Aztec temple
+  packageVersion: 1.0
+  assetPath: Assets/_AztecTemple/Prefabs/Architecture/Bazier_2.prefab
+  uploadId: 481616

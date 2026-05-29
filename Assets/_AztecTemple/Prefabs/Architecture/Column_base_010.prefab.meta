@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 580e73a2665252e4fac88b266b358dd8
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213891
+  packageName: Aztec temple
+  packageVersion: 1.0
+  assetPath: Assets/_AztecTemple/Prefabs/Architecture/Column_base_010.prefab
+  uploadId: 481616

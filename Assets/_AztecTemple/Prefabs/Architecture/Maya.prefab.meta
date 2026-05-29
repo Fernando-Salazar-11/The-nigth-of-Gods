@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 31261f6a1ad7d37479838c456b48f07e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213891
+  packageName: Aztec temple
+  packageVersion: 1.0
+  assetPath: Assets/_AztecTemple/Prefabs/Architecture/Maya.prefab
+  uploadId: 481616

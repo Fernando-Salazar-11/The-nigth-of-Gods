@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a2991a03359ecf049a1a006c200406cc
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213891
+  packageName: Aztec temple
+  packageVersion: 1.0
+  assetPath: Assets/_AztecTemple/__CubemapsShaders/ASE_Standart.shader
+  uploadId: 481616

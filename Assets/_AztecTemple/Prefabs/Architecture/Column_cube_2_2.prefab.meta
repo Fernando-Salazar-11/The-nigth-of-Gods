@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: befed74996f1f624abf0bce026a6cf5a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213891
+  packageName: Aztec temple
+  packageVersion: 1.0
+  assetPath: Assets/_AztecTemple/Prefabs/Architecture/Column_cube_2_2.prefab
+  uploadId: 481616

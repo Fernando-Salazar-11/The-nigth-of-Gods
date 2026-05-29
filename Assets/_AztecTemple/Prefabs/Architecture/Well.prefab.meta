@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a5646872db83ae243a4c541e93ef7f82
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213891
+  packageName: Aztec temple
+  packageVersion: 1.0
+  assetPath: Assets/_AztecTemple/Prefabs/Architecture/Well.prefab
+  uploadId: 481616

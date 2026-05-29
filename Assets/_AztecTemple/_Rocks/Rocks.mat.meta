@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ce8d7af1a3ac0f94ba1e0ed826d9c2d5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213891
+  packageName: Aztec temple
+  packageVersion: 1.0
+  assetPath: Assets/_AztecTemple/_Rocks/Rocks.mat
+  uploadId: 481616

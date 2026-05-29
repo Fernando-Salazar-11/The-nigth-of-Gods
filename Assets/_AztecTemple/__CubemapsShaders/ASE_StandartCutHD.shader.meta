@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 4375b2045f129374a9e2630ec0f5524e
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213891
+  packageName: Aztec temple
+  packageVersion: 1.0
+  assetPath: Assets/_AztecTemple/__CubemapsShaders/ASE_StandartCutHD.shader
+  uploadId: 481616

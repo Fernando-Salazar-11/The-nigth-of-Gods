@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a71967a6f58e2a04d8d4de060dc62555
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213891
+  packageName: Aztec temple
+  packageVersion: 1.0
+  assetPath: Assets/_AztecTemple/Prefabs/Architecture/Wall_1.prefab
+  uploadId: 481616

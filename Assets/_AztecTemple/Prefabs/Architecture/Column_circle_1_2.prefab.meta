@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c04e0a6bf854b7541836d524932e7f20
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213891
+  packageName: Aztec temple
+  packageVersion: 1.0
+  assetPath: Assets/_AztecTemple/Prefabs/Architecture/Column_circle_1_2.prefab
+  uploadId: 481616

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 20ec8f3dc66761149b8a722636f5d65b
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213891
+  packageName: Aztec temple
+  packageVersion: 1.0
+  assetPath: Assets/_AztecTemple/Prefabs/Architecture/beams_3.prefab
+  uploadId: 481616

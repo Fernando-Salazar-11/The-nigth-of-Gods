@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: acc229e882c55784b8c85ebc804de74e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213891
+  packageName: Aztec temple
+  packageVersion: 1.0
+  assetPath: Assets/_AztecTemple/Prefabs/Architecture/Piramide.prefab
+  uploadId: 481616

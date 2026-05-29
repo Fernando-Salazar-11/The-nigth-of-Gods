@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a6cf922f00a678b4fb043bff660bef0c
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213891
+  packageName: Aztec temple
+  packageVersion: 1.0
+  assetPath: Assets/_AztecTemple/Prefabs/Architecture/cornice_1.prefab
+  uploadId: 481616
