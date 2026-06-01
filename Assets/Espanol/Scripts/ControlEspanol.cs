@@ -13,7 +13,7 @@ public class ControlEspanol : MonoBehaviour
 
     [Header("Cámara (Primera Persona)")]
     public Transform camaraTransform;
-    public float sensibilidadMouse = 200f;
+    public float sensibilidadMouse = 350f;
     private float rotacionX = 0f; // Guarda la rotación arriba/abajo
 
 
@@ -33,6 +33,9 @@ public class ControlEspanol : MonoBehaviour
     public float tiempoRegenCaminando = 30f;
 
     private bool puedeCorrer = true;
+
+    [Header("Escondite")]
+    [SerializeField] private bool estaEscondido = false;
 
     void Start()
     {
@@ -61,8 +64,24 @@ public class ControlEspanol : MonoBehaviour
 
     void Update()
     {
+        // La cámara SIEMPRE se va a mover, incluso dentro del arbusto
         ManejarRotacion();
-        ManejarMovimientoYEstamina();
+
+        // El movimiento y gasto de estamina SOLO funcionan si NO está escondido
+        if (!estaEscondido)
+        {
+            ManejarMovimientoYEstamina();
+        }
+        else
+        {
+            // Si entra al arbusto, apagamos en seco las animaciones de caminado/sprint
+            if (animator != null)
+            {
+                animator.SetBool("caminando", false);
+                animator.SetBool("corriendo", false);
+            }
+            ManejarCamaraSprint(false);
+        }
     }
 
     void ManejarRotacion()
@@ -173,5 +192,15 @@ public class ControlEspanol : MonoBehaviour
             velocidadVertical.y += gravedad * Time.deltaTime;
         }
         controller.Move(velocidadVertical * Time.deltaTime);
+    }
+
+    public bool getEscondido()
+    {
+        return estaEscondido;
+    }
+
+    public void setEscondido(bool estado)
+    {
+        estaEscondido = estado;
     }
 }
