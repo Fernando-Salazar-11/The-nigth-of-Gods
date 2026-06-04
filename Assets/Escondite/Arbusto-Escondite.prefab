@@ -115,7 +115,7 @@ GameObject:
   - component: {fileID: 1218071470178320139}
   - component: {fileID: 5031406955176275787}
   m_Layer: 0
-  m_Name: ContenedorEscondite
+  m_Name: Arbusto-Escondite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
