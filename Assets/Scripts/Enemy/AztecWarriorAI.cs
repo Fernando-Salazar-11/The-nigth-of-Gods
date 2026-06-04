@@ -3,6 +3,10 @@ using UnityEngine.AI;
 
 public class AztecWarriorAI : MonoBehaviour
 {
+    public float normalSpeed = 5.5f;
+
+    public float fastSpeed = 11f;
+
     Vector3 ultimaPosicionJugador;
 
     bool searching;
@@ -133,6 +137,21 @@ public class AztecWarriorAI : MonoBehaviour
 
     void DetectPlayer()
 {
+    
+    float distancia = Vector3.Distance(
+    transform.position,
+    player.position
+    );
+
+    if(distancia > 100f)
+    {
+        agent.speed = fastSpeed;
+    }
+    else
+    {
+        agent.speed = normalSpeed;
+    }
+
     if(player == null)
         return;
 
